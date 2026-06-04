@@ -1,0 +1,73 @@
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 24px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.formLabel {
+  font-size: 14px;
+  font-weight: 500;
+}
+.formInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.formButton {
+  background: #1f2328;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.formButton:hover {
+  background: #333;
+}
+.colorInput {
+  width: 60px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 2px;
+}
+.btnRegresar {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.btnRegresar:hover {
+  color: #1f2328;
+}

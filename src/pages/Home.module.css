@@ -1,0 +1,85 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btnNueva {
+  background: #1f2328;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.nota {
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 160px;
+}
+
+.notaTitulo {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2328;
+}
+
+.notaContenido {
+  font-size: 14px;
+  color: #3d3d3d;
+  flex: 1;
+}
+
+.notaCategoria {
+  font-size: 12px;
+  color: #555;
+  font-style: italic;
+}
+
+.notaAcciones {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.btnEditar {
+  background: rgba(0,0,0,0.1);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btnEliminar {
+  background: rgba(0,0,0,0.1);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #c0392b;
+}
