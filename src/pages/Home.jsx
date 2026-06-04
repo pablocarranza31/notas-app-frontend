@@ -17,7 +17,7 @@ const Home = () => {
         navigate('/')
         return
       }
-      const res = await axios.get('http://localhost:3000/notas', {
+      const res = await axios.get('https://notas-app-backend-69l6.onrender.com/notas', {
         headers: { Authorization: `Bearer ${token}` }
       })
       setNotas(res.data)
@@ -53,7 +53,7 @@ const Home = () => {
                 onCancel={() => setNotaAEliminar(null)}
                 onDelete={async () => {
                   const token = localStorage.getItem('token')
-                  await axios.delete(`http://localhost:3000/notas/${nota.id}`, {
+                  await axios.delete(`https://notas-app-backend-69l6.onrender.com/notas/${nota.id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                   })
                   setNotas(notas.filter(n => n.id !== nota.id))

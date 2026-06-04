@@ -22,11 +22,11 @@ const NoteForm = () => {
     try {
       const token = localStorage.getItem('token')
       if(nota) {
-        await axios.put(`http://localhost:3000/notas/${nota.id}`, { titulo, contenido, categoria, color }, {
+        await axios.put(`https://notas-app-backend-69l6.onrender.com/notas/${nota.id}`, { titulo, contenido, categoria, color }, {
           headers: { Authorization: `Bearer ${token}` }
         })
       } else {
-        await axios.post('http://localhost:3000/notas', { titulo, contenido, categoria, color },{
+        await axios.post('https://notas-app-backend-69l6.onrender.com/notas', { titulo, contenido, categoria, color },{
           headers: { Authorization: `Bearer ${token}` }
         })
       }
